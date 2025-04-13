@@ -1,5 +1,5 @@
 const Agency = require("../model/agency");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const agencyAddStudents =require("../model/addstudentagency")
 const agency_home = async (req, res) => {
     try {
