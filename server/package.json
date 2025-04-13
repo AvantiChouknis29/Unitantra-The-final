@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm rebuild bcrypt",
-    "start": "nodemon server",
-    "postinstall": "npm rebuild bcrypt --build-from-source"
+    "start": "nodemon server"
+   
   },
   
   "keywords": [],
