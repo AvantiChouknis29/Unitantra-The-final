@@ -8,7 +8,7 @@ const EmailVerify=()=>{
     useEffect(()=>{
         const verifyEmailUrl=async()=>{
             try{
-                const url=`http://localhost:5713/api/users/${params.id}/verify/${params.token}`
+                const url=`https://unitantra-backend.onrender.com/api/users/${params.id}/verify/${params.token}`
                 const {data}=await axios.get(url);
                 console.log(data);
                 setValidUrl(true)
