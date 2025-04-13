@@ -13,7 +13,7 @@ const AccomodationFetch = () => {
 
         try {
             const token = localStorage.getItem('token'); // Assuming your token is stored here
-            const response = await fetch('http://localhost:5000/api/admin/accomodation', {
+            const response = await fetch('https://unitantra-backend.onrender.com/api/admin/accomodation', {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',

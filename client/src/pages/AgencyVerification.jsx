@@ -9,7 +9,7 @@ const AgencyVerification = () => {
         const fetchAgencies = async () => {
             try {
                 const token = localStorage.getItem('token');
-                const response = await fetch('http://localhost:5000/api/admin/agencies', {
+                const response = await fetch('https://unitantra-backend.onrender.com/api/admin/agencies', {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',
@@ -36,7 +36,7 @@ const AgencyVerification = () => {
     const handleAccept = async (id) => {
         try {
             const token = localStorage.getItem('token');
-            const response = await fetch(`http://localhost:5000/api/admin/agencies/${id}/accept`, {
+            const response = await fetch(`https://unitantra-backend.onrender.com/api/admin/agencies/${id}/accept`, {
                 method: 'PATCH',
                 headers: {
                     'Content-Type': 'application/json',
@@ -58,7 +58,7 @@ const AgencyVerification = () => {
     const handleReject = async (id) => {
         try {
             const token = localStorage.getItem('token');
-            const response = await fetch(`http://localhost:5000/api/admin/agencies/${id}/reject`, {
+            const response = await fetch(`https://unitantra-backend.onrender.com/api/admin/agencies/${id}/reject`, {
                 method: 'PATCH',
                 headers: {
                     'Content-Type': 'application/json',

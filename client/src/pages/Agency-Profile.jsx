@@ -39,7 +39,7 @@ export const AgencyProfile = () => {
 
     try {
       if (agency) {
-        const response = await fetch("http://localhost:5000/api/agency_profile", {
+        const response = await fetch("https://unitantra-backend.onrender.com/api/agency_profile", {
           method: "POST",
           headers: {
             'Content-Type': "application/json"

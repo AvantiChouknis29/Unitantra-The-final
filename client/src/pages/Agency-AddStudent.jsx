@@ -30,7 +30,7 @@ export const AgencyAddStudentForm = () => {
     const submissionData = { ...formData, AgencyId: agency._id };
 
     try {
-      const response = await axios.post('http://localhost:5000/api/add-a-student-agency', submissionData);
+      const response = await axios.post('https://unitantra-backend.onrender.com/api/add-a-student-agency', submissionData);
       if (response.status === 200) {
         alert('Student added successfully!');
         setFormData({

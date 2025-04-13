@@ -5,7 +5,7 @@ import './AuxilliaryServices.css';
 
 export const fetchUserApplications = async (email, authorizationToken) => {
     try {
-        const response = await fetch(`http://localhost:5000/api/admin/applications/${email}`, {
+        const response = await fetch(`https://unitantra-backend.onrender.com/api/admin/applications/${email}`, {
             method: "GET",
             headers: {
                 Authorization: authorizationToken,
@@ -42,7 +42,7 @@ const UserApplications = () => {
         if (!status) return alert("Please enter a status.");
 
         try {
-            const response = await fetch(`http://localhost:5000/api/admin/user/application/status/${appId}`, {
+            const response = await fetch(`https://unitantra-backend.onrender.com/api/admin/user/application/status/${appId}`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",

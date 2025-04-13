@@ -34,7 +34,7 @@ export const Search = () => {
 
   const fetchUniversities = async (page) => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/auth/getAllUniversities`, {
+      const response = await axios.get(`https://unitantra-backend.onrender.com/api/auth/getAllUniversities`, {
         params: {
           university,
           course,
@@ -75,7 +75,7 @@ export const Search = () => {
       const headers = { Authorization: `Bearer ${token}` };
 
       // Make a POST request to add university to cart
-      await axios.post('http://localhost:5000/api/add-to-cart', {
+      await axios.post('https://unitantra-backend.onrender.com/api/add-to-cart', {
         university: university.University,
         course: university.Course,
         link: university.Link

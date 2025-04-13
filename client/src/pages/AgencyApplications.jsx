@@ -10,7 +10,7 @@ const AgencyApplications = () => {
     const fetchApplications = async () => {
         try {
             const token = getToken(); // Retrieve token for authorization
-            const response = await fetch(`http://localhost:5000/api/agencyApplications`, {
+            const response = await fetch(`https://unitantra-backend.onrender.com/api/agencyApplications`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',

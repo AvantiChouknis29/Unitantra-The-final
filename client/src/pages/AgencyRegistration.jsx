@@ -36,7 +36,7 @@ import { toast } from 'react-toastify';
     const handleSubmit = async (e) => {
         e.preventDefault();
         try{
-        const response=await fetch(`http://localhost:5000/api/agency_register`,{
+        const response=await fetch(`https://unitantra-backend.onrender.com/api/agency_register`,{
             method:"POST",
             headers:{
                 "Content-Type":"application/json",

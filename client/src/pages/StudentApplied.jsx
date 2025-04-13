@@ -27,7 +27,7 @@ const StudentApplied = () => {
       }
   
       try {
-        const response = await axios.get(`http://localhost:5000/api/applied/${user.email}`);
+        const response = await axios.get(`https://unitantra-backend.onrender.com/api/applied/${user.email}`);
         console.log('Response:', response.data);
   
         if (Array.isArray(response.data) && response.data.length > 0) {

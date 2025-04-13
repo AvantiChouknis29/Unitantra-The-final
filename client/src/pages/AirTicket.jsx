@@ -8,7 +8,7 @@ const AirTicketForm = () => {
 
     const onSubmit = async (data) => {
         try {
-            const response = await axios.post('http://localhost:5000/api/airticket', data);
+            const response = await axios.post('https://unitantra-backend.onrender.com/api/airticket', data);
             alert(response.data.message);
         } catch (error) {
             console.error("There was an error submitting the form!", error);

@@ -11,7 +11,7 @@ export const AdminAgency = () => {
     // Fetch all agencies
     const getAllAgencyData = async () => {
         try {
-            const response = await fetch("http://localhost:5000/api/admin/agency", {
+            const response = await fetch("https://unitantra-backend.onrender.com/api/admin/agency", {
                 method: "GET",
                 headers: {
                     Authorization: authorizationToken,
@@ -36,7 +36,7 @@ export const AdminAgency = () => {
     // Delete agency
     const deleteAgency = async (id) => {
         try {
-            const response = await fetch(`http://localhost:5000/api/admin/agency/delete/${id}`, {
+            const response = await fetch(`https://unitantra-backend.onrender.com/api/admin/agency/delete/${id}`, {
                 method: "DELETE",
                 headers: {
                     Authorization: authorizationToken,

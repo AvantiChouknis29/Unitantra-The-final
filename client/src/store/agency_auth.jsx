@@ -32,7 +32,7 @@ export const AgencyAuthProvider = ({ children }) => {
     if (!token) return;
 
     try {
-      const response = await fetch("http://localhost:5000/api/agency_data", {
+      const response = await fetch("https://unitantra-backend.onrender.com/api/agency_data", {
         method: "GET",
         headers: {
           Authorization: authorizationToken,  // Use the `token` state variable
@@ -60,7 +60,7 @@ export const AgencyAuthProvider = ({ children }) => {
     if (!token) return;
 
     try {
-      const response = await fetch("http://localhost:5000/api/agencyApplications", {
+      const response = await fetch("https://unitantra-backend.onrender.com/api/agencyApplications", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

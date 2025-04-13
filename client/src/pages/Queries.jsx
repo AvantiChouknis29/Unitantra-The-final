@@ -8,7 +8,7 @@ const QueriesForm = () => {
 
     const onSubmit = async (data) => {
         try {
-            const response = await axios.post('http://localhost:5000/api/queries', data);
+            const response = await axios.post('https://unitantra-backend.onrender.com/api/queries', data);
             alert(response.data.message);
         } catch (error) {
             console.error("There was an error submitting the form!", error);

@@ -8,7 +8,7 @@ const IELTSForm = () => {
 
     const onSubmit = async (data) => {
         try {
-            const response = await axios.post('http://localhost:5000/api/ielts', data);
+            const response = await axios.post('https://unitantra-backend.onrender.com/api/ielts', data);
            // alert(response.data.message);
            console.log("Submitting data:", data);
            alert("Request sent successfully")

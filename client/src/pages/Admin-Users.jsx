@@ -11,7 +11,7 @@ export const AdminUsers = () => {
 
     const getAllUsersData = async () => {
         try {
-            const response = await fetch("http://localhost:5000/api/admin/users", {
+            const response = await fetch("https://unitantra-backend.onrender.com/api/admin/users", {
                 method: "GET",
                 headers: {
                     Authorization: authorizationToken
@@ -34,7 +34,7 @@ export const AdminUsers = () => {
     // Delete user function
     const deleteUser = async (id) => {
         try {
-            const response = await fetch(`http://localhost:5000/api/admin/users/delete/${id}`, {
+            const response = await fetch(`https://unitantra-backend.onrender.com/api/admin/users/delete/${id}`, {
                 method: "DELETE",
                 headers: {
                     Authorization: authorizationToken,

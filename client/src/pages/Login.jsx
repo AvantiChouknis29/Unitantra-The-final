@@ -4,7 +4,7 @@ import LoginImage from './image2.jpg';
 //import './Register.css';
 import { useAuth } from '../store/auth';
 import { toast } from 'react-toastify';
-const URL = 'http://localhost:5000/api/auth/login';
+const URL = 'https://unitantra-backend.onrender.com/api/auth/login';
 import { Navbar } from '../components/Navbar';
 export const Login = () => {
     const [user, setUser] = useState({

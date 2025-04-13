@@ -24,7 +24,7 @@ const ApplicationStatus = ({ setShortlistedCount }) => {
 
         const headers = { Authorization: `Bearer ${token}` };
 
-        const response = await axios.get('http://localhost:5000/api/get-cart-items', { headers });
+        const response = await axios.get('https://unitantra-backend.onrender.com/api/get-cart-items', { headers });
         console.log('Response:', response.data); 
         setUniversities(response.data.universities);
         setShortlistedCount(response.data.universities.length); // Update shortlisted count
@@ -65,7 +65,7 @@ const ApplicationStatus = ({ setShortlistedCount }) => {
         phone: phone,
       };
 
-      const response = await axios.post('http://localhost:5000/api/apply', payload, { headers });
+      const response = await axios.post('https://unitantra-backend.onrender.com/api/apply', payload, { headers });
       console.log('Apply Response:', response.data); // Log the response from backend
       toast.success('Application submitted successfully!');
     } catch (error) {

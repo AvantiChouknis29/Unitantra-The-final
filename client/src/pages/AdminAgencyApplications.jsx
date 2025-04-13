@@ -5,7 +5,7 @@ import { useAuth } from "../store/auth";
 const fetchAgencyApplications = async (agencyId, authorizationToken) => {
     try {
         const response = await fetch(
-            `http://localhost:5000/api/admin/agency/applications/${agencyId}`,
+            `https://unitantra-backend.onrender.com/api/admin/agency/applications/${agencyId}`,
             {
                 method: "GET",
                 headers: {
@@ -31,7 +31,7 @@ const fetchAgencyApplications = async (agencyId, authorizationToken) => {
 const updateStatus = async (appId, newStatus, authorizationToken) => {
     try {
         const response = await fetch(
-            `http://localhost:5000/api/admin/agency/application/status/${appId}`,
+            `https://unitantra-backend.onrender.com/api/admin/agency/application/status/${appId}`,
             {
                 method: "PUT",
                 headers: {

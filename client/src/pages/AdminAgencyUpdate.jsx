@@ -16,7 +16,7 @@ export const AdminAgencyUpdate = () => {
     // Fetch single agency data
     const getSingleAgencyData = async () => {
         try {
-            const response = await fetch(`http://localhost:5000/api/admin/agency/${params.id}`, {
+            const response = await fetch(`https://unitantra-backend.onrender.com/api/admin/agency/${params.id}`, {
                 method: "GET",
                 headers: {
                     Authorization: authorizationToken,
@@ -55,7 +55,7 @@ export const AdminAgencyUpdate = () => {
         e.preventDefault();
 
         try {
-            const response = await fetch(`http://localhost:5000/api/admin/agency/update/${params.id}`, {
+            const response = await fetch(`https://unitantra-backend.onrender.com/api/admin/agency/update/${params.id}`, {
                 method: "PATCH",
                 headers: {
                     Authorization: authorizationToken,

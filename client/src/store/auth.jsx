@@ -42,7 +42,7 @@ const LogoutAdmin=()=>{
   // JWT Authentication - to get the currently logged-in user data
   const userAuthentication = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/auth/user", {
+      const response = await fetch("https://unitantra-backend.onrender.com/api/auth/user", {
         method: "GET",
         headers: {
           Authorization: authorizationToken,

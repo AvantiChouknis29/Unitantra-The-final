@@ -18,7 +18,7 @@ const AdminUpdate = () => {
     // Get User data
     const getSingleUserData = async (id) => {
         try {
-            const response = await fetch(`http://localhost:5000/api/admin/users/${id}`, {
+            const response = await fetch(`https://unitantra-backend.onrender.com/api/admin/users/${id}`, {
                 method: "GET",
                 headers: {
                     Authorization: authorizationToken,
@@ -54,7 +54,7 @@ const AdminUpdate = () => {
         e.preventDefault();
 
         try {
-            const response = await fetch(`http://localhost:5000/api/admin/users/update/${params.id}`, {
+            const response = await fetch(`https://unitantra-backend.onrender.com/api/admin/users/update/${params.id}`, {
                 method: "PATCH",
                 headers: {
                     Authorization: authorizationToken,

@@ -40,7 +40,7 @@ export const AgencySearch = () => {
 
   const fetchUniversities = async (page) => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/auth/getAllUniversities`, {
+      const response = await axios.get(`https://unitantra-backend.onrender.com/api/auth/getAllUniversities`, {
         params: {
           university,
           course,
@@ -89,7 +89,7 @@ export const AgencySearch = () => {
     
       const headers = { Authorization: `Bearer ${token}` };
 
-      await axios.post('http://localhost:5000/api/agency-students/add-student', {
+      await axios.post('https://unitantra-backend.onrender.com/api/agency-students/add-student', {
         university: university.University,
         course: university.Course,
         link: university.Link,

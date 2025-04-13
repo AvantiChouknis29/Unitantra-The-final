@@ -55,7 +55,7 @@ const register = async (req, res) => {
         await token.save();
 
         // Send verification email
-        const verificationLink = `http://localhost:5000/api/auth/confirm/${token.token}`;
+        const verificationLink = `https://unitantra-backend.onrender.com/api/auth/confirm/${token.token}`;
         await verifmail(savedUser.email, verificationLink);
 
         res.status(201).json({ 

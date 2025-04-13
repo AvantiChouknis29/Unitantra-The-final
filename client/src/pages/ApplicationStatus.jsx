@@ -23,7 +23,7 @@ const ApplicationStatus = () => {
 
         const headers = { Authorization: `Bearer ${token}` };
 
-        const response = await axios.get('http://localhost:5000/api/get-cart-items', { headers });
+        const response = await axios.get('https://unitantra-backend.onrender.com/api/get-cart-items', { headers });
         console.log('Response:', response.data); // Log the response data
         setUniversities(response.data.universities);
         setLoading(false);
@@ -63,7 +63,7 @@ const ApplicationStatus = () => {
        
       };
 
-      const response = await axios.post('http://localhost:5000/api/apply', payload, { headers });
+      const response = await axios.post('https://unitantra-backend.onrender.com/api/apply', payload, { headers });
       console.log('Apply Response:', response.data); // Log the response from backend
       toast.success('Application submitted successfully!');
     } catch (error) {
