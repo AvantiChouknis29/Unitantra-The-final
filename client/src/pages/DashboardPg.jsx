@@ -47,12 +47,12 @@ function DashboardPg() {
           <div className="card1">
             <h2>Shortlisted</h2>
             <p>Check out shortlisted courses</p>
-            <a href="http://localhost:5173/applicationstatus">Click here</a>
+            <a href="https://unitantra-the-final-frontend.onrender.com/applicationstatus">Click here</a>
           </div>
           <div className="card">
             <h2>Applied</h2>
             <p>Courses you have applied to</p>
-            <a href="http://localhost:5173/applied">Click here</a>
+            <a href="https://unitantra-the-final-frontend.onrender.com/applied">Click here</a>
           </div>
          
         </div>
