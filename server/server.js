@@ -28,7 +28,8 @@ app.use(express.json());
 
 // Handling CORS policy issue
 const corsOptions = {
-    origin: "http://localhost:5173",
+    origin: ["http://localhost:5173",
+    "https://unitantra-the-final-frontend.onrender.com"],
     methods: "GET,POST,PUT,DELETE,PATCH,HEAD",
     credentials: true
 };
