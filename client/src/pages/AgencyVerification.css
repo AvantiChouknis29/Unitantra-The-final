@@ -1,0 +1,115 @@
+
+
+
+.heading {
+    text-align: center;
+   color: rgb(46, 120, 183);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.agency-verification {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+.heading {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* List styling */
+.agency-list {
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+.agency-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.agency-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Agency details styling */
+.agency-details {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+    max-width: 100%;
+}
+
+.agency-actions {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+h5 {
+    text-align: left;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+/* Button styling */
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.accept-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.accept-btn:hover {
+    background-color: #45a049;
+}
+
+.reject-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.reject-btn:hover {
+    background-color: #e53935;
+}
+
+/* Loading and error message styling */
+p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .agency-item {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .agency-details {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }}

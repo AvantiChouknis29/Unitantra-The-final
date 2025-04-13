@@ -1,0 +1,827 @@
+
+
+.div-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+}
+.my-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #144168;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.my-btn:hover {
+    background-color: #02111f;
+}
+.error {
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    
+
+    .my-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .error {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+  
+
+    .my-btn {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .error {
+        font-size: 14px;
+    }
+}
+/* Main container */
+.accomodation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #f7f8fc;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Title */
+.accomodation-title {
+    font-size: 26px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* No data message */
+.accomodation-no-data {
+    font-size: 18px;
+    color: #777;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Card for each accomodation */
+.accomodation-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 700px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.accomodation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Accomodation ID */
+.accomodation-id {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #2b7a78;
+}
+
+/* Accomodation info */
+.accomodation-info p {
+    font-size: 16px;
+    margin: 8px 0;
+    color: #555;
+}
+
+.accomodation-info p strong {
+    color: #333;
+}
+
+/* Media Queries */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .accomodation-container {
+        padding: 15px;
+    }
+
+    .accomodation-title {
+        font-size: 22px;
+    }
+
+    .accomodation-card {
+        padding: 15px;
+    }
+
+    .accomodation-id {
+        font-size: 18px;
+    }
+
+    .accomodation-info p {
+        font-size: 14px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .accomodation-container {
+        padding: 10px;
+    }
+
+    .accomodation-title {
+        font-size: 20px;
+    }
+
+    .accomodation-card {
+        padding: 12px;
+    }
+
+    .accomodation-id {
+        font-size: 16px;
+    }
+
+    .accomodation-info p {
+        font-size: 13px;
+    }
+}
+/* Main container */
+.flight-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #f7f8fc;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Title */
+.flight-title {
+    font-size: 26px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* No data message */
+.flight-no-data {
+    font-size: 18px;
+    color: #777;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Card for each ticket */
+.flight-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 700px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Flight ID */
+.flight-id {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #2b7a78;
+}
+
+/* Flight info */
+.flight-info p {
+    font-size: 16px;
+    margin: 8px 0;
+    color: #555;
+}
+
+.flight-info p strong {
+    color: #333;
+}
+
+/* Media Queries */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .flight-container {
+        padding: 15px;
+    }
+
+    .flight-title {
+        font-size: 22px;
+    }
+
+    .flight-card {
+        padding: 15px;
+    }
+
+    .flight-id {
+        font-size: 18px;
+    }
+
+    .flight-info p {
+        font-size: 14px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .flight-container {
+        padding: 10px;
+    }
+
+    .flight-title {
+        font-size: 20px;
+    }
+
+    .flight-card {
+        padding: 12px;
+    }
+
+    .flight-id {
+        font-size: 16px;
+    }
+
+    .flight-info p {
+        font-size: 13px;
+    }
+}
+/* Main container */
+.ielts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #f7f8fc;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Title */
+.ielts-title {
+    font-size: 26px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* No data message */
+.ielts-no-data {
+    font-size: 18px;
+    color: #777;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Card for each IELTS result */
+.ielts-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 700px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ielts-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* IELTS ID */
+.ielts-id {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #2b7a78;
+}
+
+/* IELTS info */
+.ielts-info p {
+    font-size: 16px;
+    margin: 8px 0;
+    color: #555;
+}
+
+.ielts-info p strong {
+    color: #333;
+}
+
+/* Media Queries */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .ielts-container {
+        padding: 15px;
+    }
+
+    .ielts-title {
+        font-size: 22px;
+    }
+
+    .ielts-card {
+        padding: 15px;
+    }
+
+    .ielts-id {
+        font-size: 18px;
+    }
+
+    .ielts-info p {
+        font-size: 14px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .ielts-container {
+        padding: 10px;
+    }
+
+    .ielts-title {
+        font-size: 20px;
+    }
+
+    .ielts-card {
+        padding: 12px;
+    }
+
+    .ielts-id {
+        font-size: 16px;
+    }
+
+    .ielts-info p {
+        font-size: 13px;
+    }
+}
+/* Main container */
+.counselling-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #f7f8fc;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Title */
+.counselling-title {
+    font-size: 26px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* No data message */
+.counselling-no-data {
+    font-size: 18px;
+    color: #777;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Card for each counselling detail */
+.counselling-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 700px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.counselling-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Counselling ID */
+.counselling-id {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #2b7a78;
+}
+
+/* Counselling info */
+.counselling-info p {
+    font-size: 16px;
+    margin: 8px 0;
+    color: #555;
+}
+
+.counselling-info p strong {
+    color: #333;
+}
+
+/* Media Queries */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .counselling-container {
+        padding: 15px;
+    }
+
+    .counselling-title {
+        font-size: 22px;
+    }
+
+    .counselling-card {
+        padding: 15px;
+    }
+
+    .counselling-id {
+        font-size: 18px;
+    }
+
+    .counselling-info p {
+        font-size: 14px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .counselling-container {
+        padding: 10px;
+    }
+
+    .counselling-title {
+        font-size: 20px;
+    }
+
+    .counselling-card {
+        padding: 12px;
+    }
+
+    .counselling-id {
+        font-size: 16px;
+    }
+
+    .counselling-info p {
+        font-size: 13px;
+    }
+}
+/* Main container */
+.queries-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #f7f8fc;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Title */
+.queries-title {
+    font-size: 26px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* No data message */
+.queries-no-data {
+    font-size: 18px;
+    color: #777;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* List of queries */
+.queries-list {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+/* Card for each query */
+.queries-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.queries-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Query info */
+.queries-info {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Media Queries */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .queries-container {
+        padding: 15px;
+    }
+
+    .queries-title {
+        font-size: 22px;
+    }
+
+    .queries-card {
+        padding: 15px;
+    }
+
+    .queries-info {
+        font-size: 14px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .queries-container {
+        padding: 10px;
+    }
+
+    .queries-title {
+        font-size: 20px;
+    }
+
+    .queries-card {
+        padding: 12px;
+    }
+
+    .queries-info {
+        font-size: 13px;
+    }
+}
+/* Main container */
+.user-applications-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #f7f8fc;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Title */
+.user-applications-title {
+    font-size: 26px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Loading and error messages */
+.loading-text,
+.error-text {
+    font-size: 18px;
+    color: #777;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Table styles */
+.applications-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.applications-table th,
+.applications-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.applications-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Media Queries */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .user-applications-container {
+        padding: 15px;
+    }
+
+    .user-applications-title {
+        font-size: 22px;
+    }
+
+    .loading-text,
+    .error-text {
+        font-size: 16px;
+    }
+
+    .applications-table th,
+    .applications-table td {
+        padding: 10px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .user-applications-container {
+        padding: 10px;
+    }
+
+    .user-applications-title {
+        font-size: 20px;
+    }
+
+    .loading-text,
+    .error-text {
+        font-size: 14px;
+    }
+
+    .applications-table th,
+    .applications-table td {
+        padding: 8px;
+    }
+}
+/* AgencyApplications.css */
+
+/* Base styles remain the same */
+
+/* Container styles */
+.agency-applications-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styles */
+.agency-applications-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* No applications message */
+.no-applications-message {
+    color: #666;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* List styles */
+.applications-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Application item styles */
+.application-item {
+    background-color: #ffffff;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.application-item:hover {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Details styles */
+.application-details {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Text styles */
+.university-name {
+    font-size: 20px;
+    color: #2c3e50;
+    margin: 0 0 5px 0;
+}
+
+.course-info,
+.user-uid,
+.agency-uid {
+    font-size: 16px;
+    color: #555;
+    margin: 2px 0;
+}
+
+/* Link styles */
+.more-info-link {
+    margin-top: 10px;
+    color: #3498db;
+    text-decoration: none;
+}
+
+.more-info-link:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+
+/* For tablets (min-width: 600px) */
+@media (max-width: 600px) {
+    .agency-applications-container {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    .agency-applications-title {
+        font-size: 20px; /* Slightly smaller title */
+    }
+
+    .university-name {
+        font-size: 18px; /* Adjust university name size */
+    }
+
+    .course-info,
+    .user-uid,
+    .agency-uid {
+        font-size: 14px; /* Adjust detail sizes */
+    }
+}
+
+/* For mobile devices (max-width: 400px) */
+@media (max-width: 400px) {
+    .agency-applications-container {
+        padding: 10px; /* Further reduce padding */
+    }
+
+    .agency-applications-title {
+        font-size: 18px; /* Smaller title for mobile */
+    }
+
+    .no-applications-message {
+        font-size: 16px; /* Adjust no applications message size */
+    }
+
+    .application-item {
+        padding: 10px; /* Reduce padding in items */
+    }
+
+    .university-name {
+        font-size: 16px; /* Further adjust university name size */
+    }
+
+    .course-info,
+    .user-uid,
+    .agency-uid {
+        font-size: 12px; /* Further adjust detail sizes */
+    }
+}

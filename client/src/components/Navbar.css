@@ -1,0 +1,42 @@
+/* Navbar container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Logo link */
+.logo-brand a {
+    text-decoration: none;
+    font-size: 2.5rem; /* Increased font size */
+    color: #f7725a; /* Logo color */
+}
+
+/* Navigation menu */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+/* NavLink styles */
+nav ul li a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #2e78b7; /* NavLink color */
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f7725a; /* NavLink color on hover */
+}

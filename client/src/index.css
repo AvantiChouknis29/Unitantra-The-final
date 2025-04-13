@@ -1,0 +1,10 @@
+*{
+  margin:0;
+  padding:0;
+  box--sizzing:border-box;
+}
+.toastBody {
+  font-family: "Atlas Grotesk Web", Arial, Helvetica, sans-serif;
+  color: #f4faff; /* #10171D */
+  font-size: 1rem !important;
+}

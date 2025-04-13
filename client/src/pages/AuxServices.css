@@ -1,0 +1,60 @@
+/* Centering the form on the page with improved spacing */
+
+h5{
+    color:#064e7f;
+    text-align: center;
+    font-size: 18px;
+}
+
+.MuiContainer-root {
+    background-color: #f9f9f9;
+    padding: 32px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    height:600px;
+}
+
+/* Typography styling for the heading */
+.MuiTypography-h4 {
+    text-align: center;
+    color: #1976d2;
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+
+/* Text field styling for better spacing */
+.MuiTextField-root {
+    margin-top: 16px; /* Increased top margin for better spacing */
+    margin-bottom: 8px; /* Bottom margin to add space between fields */
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+/* Grid item spacing for uniformity */
+.MuiGrid-item {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+/* Button styling */
+.MuiButton-containedPrimary {
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 8px;
+    background-color: #1976d2;
+    color: #ffffff;
+    margin-top: 24px;
+    transition: background-color 0.3s ease;
+}
+
+.MuiButton-containedPrimary:hover {
+    background-color: #1565c0;
+}
+
+/* Custom helper text styling */
+.MuiFormHelperText-root {
+    font-size: 0.85rem;
+    color: #d32f2f;
+}

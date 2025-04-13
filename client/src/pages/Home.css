@@ -1,0 +1,265 @@
+/* General Styles */
+.unitantra-home {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1{
+text-align: center;
+
+
+}
+/* Header */
+.unitantra-header {
+  background-color: #3377b6;
+  color: #fff;
+  padding: 20px 0;
+  
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.unitantra-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.header-navigation .navigation-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navigation-link {
+  text-decoration: none;
+  color: #dee1e2;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.navigation-link:hover {
+  color: #3377b6;
+}
+
+.header-actions .action-button {
+  margin-left: 15px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.student-login {
+  background-color:rgb(4, 122, 231);
+  color: white;
+}
+
+.agency-login {
+  background-color: #0161c1;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .header-navigation {
+  
+    display: none; /* Hide navigation by default on smaller screens */
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #ffffff;
+    width: 100%;
+    position: sticky;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+ 
+  }
+
+  .header-navigation.active {
+    display: flex; /* Show navigation when toggled */
+  }
+
+  .navigation-list {
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+    padding: 10px 20px;
+    margin: 0;
+  }
+
+  .navigation-link {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #333;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .navigation-link:hover {
+    color: #007bff;
+  }
+
+  .header-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .action-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+  }
+
+  .action-button:hover {
+    background-color: #0056b3;
+  }
+
+  /* Hamburger menu styles */
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    position: relative;
+    margin: 10px 0;
+  }
+
+  .hamburger-menu::before,
+  .hamburger-menu::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    position: absolute;
+    transition: all 0.3s ease;
+  }
+
+  .hamburger-menu::before {
+    top: -10px;
+  }
+
+  .hamburger-menu::after {
+    top: 10px;
+  }
+
+  .hamburger-menu.active {
+    background-color: transparent;
+  }
+
+  .hamburger-menu.active::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+
+  .hamburger-menu.active::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.image-container {
+  position: relative;
+  text-align: center;
+  color: rgb(255, 255, 255); /* Ensures text is readable */
+}
+
+
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.image-button {
+  margin-top: 50px;
+  background-color: rgb(60, 41, 235); /* Example color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.image-button:hover {
+  background-color: #0056b3;
+}
+
+.about-title{
+  color: #0056b3;
+}
+.about-description{
+  text-align: center;
+}.about-container {
+  padding: 2rem;
+  text-align: center;
+
+}
+
+.about-title {
+  font-size: 2rem;
+  color: rgb(2, 2, 78);
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.about-card {
+  max-width: 800px;
+  margin: 0 auto;
+ 
+  padding: 2rem;
+  text-align: left;
+}
+.student-image{
+  width:350px;
+}
+.about-description {
+  font-size: 1.2rem;
+
+  color: #205781;
+}
+
+.home-img{
+  width:1689px;
+}
+.footer{
+  background-color: #dee1e2;
+  text-align: center;
+}

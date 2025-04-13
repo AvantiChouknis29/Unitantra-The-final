@@ -1,0 +1,168 @@
+.dashboard-container {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px; /* Adjust according to your sidebar width */
+}
+
+.dashboard-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.carousel .slide img {
+  padding-left:300px;
+  width: 100%;
+  height: 400px; /* Adjust height as needed */
+  object-fit: cover;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+}
+
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px;
+  text-align: center;
+  width: 14%; /* Adjusted width */
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 20px; /* Space between rows */
+ 
+}
+.card1 {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px;
+  text-align: center;
+  width: 14%; /* Adjusted width */
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 20px; /* Space between rows */
+  margin-left: 240px;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Lift up effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+.card1:hover {
+  transform: translateY(-10px); /* Lift up effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.card p {
+  color: #666;
+}
+
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.card a:hover {
+  background-color: #0056b3;
+}
+.card1 h2 {
+  
+  margin-top: 0;
+  color: #333;
+}
+
+.card1 p {
+  color: #666;
+}
+
+
+.card1 a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+ 
+}
+
+.card1 a:hover {
+  background-color: #0056b3;
+}
+/* Additional CSS to remove unwanted black area */
+.carousel .control-arrow, 
+.carousel.carousel-slider .control-dots, 
+.carousel .carousel-status {
+  display: none;
+}
+@media (max-width: 768px) {
+  .sidebar {
+    display: none !important; /* Fully hide sidebar */
+  }
+
+  .dashboard-container {
+    flex-direction: column; /* Stack elements */
+  }
+
+  .dashboard-content {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .carousel .slide img {
+    height: 200px !important; /* Smaller height */
+    padding-left: 0 !important; /* No offset */
+    object-fit: cover;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card, .card1 {
+    width: 90% !important;
+    margin: 10px 0 !important;
+    margin-left: 0 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel .slide img {
+    height: 180px !important;
+  }
+
+  .card a, .card1 a {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .card h2, .card1 h2 {
+    font-size: 18px;
+  }
+
+  .card p, .card1 p {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,51 @@
+/* AuxiliaryRequests.css */
+
+.aux-requests-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    background-color: transparent; /* No background */
+}
+
+.aux-requests-title {
+    font-size: 2rem;
+    margin-bottom: 10px; /* Reduced margin below the title */
+    color: #333;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.aux-requests-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.aux-requests-button {
+    background-color: #2e78b7; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.aux-requests-button:hover {
+    background-color: #236090; /* Darker blue on hover */
+    transform: translateY(-2px);
+}
+
+.aux-requests-button:active {
+    transform: translateY(0);
+}
+
+.aux-requests-button:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(46, 120, 183, 0.6); /* Button color shadow */
+}
