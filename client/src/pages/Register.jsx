@@ -58,11 +58,12 @@ export const Register = () => {
         <section>
             <main>
                 <div className="section-registration">
+                <br></br>  <br></br>  <br></br>
                     <div className="registration-image">
-                        <img src={registrationImage} alt="Registration" style={{ width: "600px" }} />
+                        <img src={registrationImage} alt="Registration"  />
                     </div>
                     <div className="registration-form">
-                        <Navbar></Navbar>
+                    <br></br>  <br></br>
                         <h2>Register</h2>
                         <form onSubmit={handleSubmit}>
                             <div className="form-group">

@@ -19,7 +19,7 @@ export const Navbar = () => {
                             
                         {isLoggedIn ?<li><NavLink to="/dashboard">Dashboard</NavLink></li>:""}
                        
-                            <li><NavLink to="/search">Search & Apply</NavLink></li>
+                            {isLoggedIn ?<li><NavLink to="/search">Search & Apply</NavLink></li>:""}
                             {isLoggedIn ?<li><NavLink to="/applied">Applied</NavLink></li>:""}
                        
                             {isLoggedIn && <li><NavLink to="/profile">Profile</NavLink></li>}

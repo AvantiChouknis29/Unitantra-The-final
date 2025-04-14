@@ -17,7 +17,7 @@ const AgencyDashboard = () => {
             <AgencyNavbar />
             <div className="Agency-Dashboard-container">
                 <div className="Agency-Dashboard-img">
-                    <img src={dashboardImg} alt="Dashboard" style={{height: '700px'}} />
+                    <img src={dashboardImg} alt="Dashboard"  />
                 </div>
                 <div className="Agency-Dashboard-text">
                     <h1>Hello, {agency.companyname} welcome to Unitantra!</h1>
@@ -31,6 +31,10 @@ const AgencyDashboard = () => {
                         </Link>
                         <Link to="/agencyaddstudent">
                             <button className="dashboard-btn">Add Student</button>
+                        </Link>
+
+                        <Link to="/agencystudents">
+                            <button className="dashboard-btn">All Student</button>
                         </Link>
                        
                     </div>

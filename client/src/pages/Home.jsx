@@ -171,13 +171,14 @@ export const Home = () => {
    </br><br>
    </br>
 <div className='about-section header-actions'>
-    <h2 className="about-title" style={{'color':'#0033A0'}}>Join us as a Student or Partner!</h2>
+    <h2 className="about-titles" style={{'color':'#0033A0'}}>Join us as a Student or Partner!</h2>
  <br></br> <br>
  </br> <h3 className="about-description"></h3>
+ <div className="image-container">
  <img src={student} alt="about img" className="student-image" />
  <br></br><br></br><br></br><br></br>
  <a href="/login" className="action-button student-login">Student Login</a>
-           
+ </div>         
  <br>
   </br> <br>
   </br> <br>
@@ -185,6 +186,7 @@ export const Home = () => {
   
   <br>
   </br>
+   <div className="image-container">
   <img src={partner} alt="about img" className="student-image" />
  
   <br>
@@ -195,6 +197,7 @@ export const Home = () => {
   </br> <br>
   </br> <br>
   </br>
+ </div>
    </div>
    </main>
    <br>

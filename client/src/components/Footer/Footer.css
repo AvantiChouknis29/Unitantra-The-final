@@ -1,15 +1,29 @@
-footer{
-    padding: 3.2rem;
-    text-align: center;
-    background-color: #3c8fd8;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    left: 0;
+/* Footer styling */
+.footer-p {
+    background-color: #dee1e2;  /* Soft gray background */
+    text-align: center;  /* Center the text */
+    padding: 20px;  /* Add padding for space inside the footer */
+    margin: 0;  /* Remove default margin */
+    color: #333;  /* Set a darker text color for better readability */
+    font-size: 1rem;  /* Slightly increase font size */
+    font-family: Arial, sans-serif;  /* Use a clean font */
 }
 
-.footer-p {
-    font-size: 1.4rem;
-    color: white;
-    margin-bottom: 20px;
+/* Footer text hover effect (if applicable) */
+.footer-p a {
+    text-decoration: none;  /* Remove underline from links */
+    color: #2e78b7;  /* Set a link color */
+    transition: color 0.3s ease;  /* Smooth color transition */
+}
+
+.footer-p a:hover {
+    color: #f7725a;  /* Change color on hover */
+}
+
+/* Mobile responsiveness for smaller screens */
+@media (max-width: 475px) {
+    .footer-p {
+        font-size: 1rem;  /* Reduce font size on small screens */
+        padding: 15px;  /* Adjust padding for small screens */
+    }
 }

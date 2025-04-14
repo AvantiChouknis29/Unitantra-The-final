@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'; 
 import './AgencyVerification.css'
+import { Footer } from '../components/Footer/Footer';
 const AgencyVerification = () => {
     const [agencies, setAgencies] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -80,7 +81,7 @@ const AgencyVerification = () => {
     if (loading) return <p>Loading...</p>;
     if (error) return <p className="error-message">{error}</p>;
 
-    return (
+    return (<>
         <div className="agency-verification">
             <h2 className="heading">Agencies</h2>
             <ul className="agency-list">
@@ -100,7 +101,10 @@ const AgencyVerification = () => {
                     </li>
                 ))}
             </ul>
+            
         </div>
+        <Footer></Footer>
+      </>
     );
 };
 

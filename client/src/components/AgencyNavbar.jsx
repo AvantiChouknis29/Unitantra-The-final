@@ -21,10 +21,6 @@ export const AgencyNavbar = () => {
                        
                        <li><NavLink to="/agencysearch">Search & Apply</NavLink></li>
                        
-                            <li><NavLink to="/agencyapplications">Applications</NavLink></li>
-                            <li><NavLink to="/agencyaddstudent">Add Student</NavLink>   </li>
-                            <li><NavLink to="/agencystudents">All Students</NavLink>   </li>
-                        
                              
                         <li><NavLink to="/agencyprofile">Profile</NavLink></li>
                         {isLoggedInAgency? 

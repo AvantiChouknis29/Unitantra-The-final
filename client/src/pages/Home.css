@@ -122,7 +122,7 @@ text-align: center;
 
   .action-button {
     font-size: 0.9rem;
-    padding: 8px 16px;
+  
     background-color: #007bff;
     color: white;
     text-decoration: none;
@@ -239,6 +239,12 @@ text-align: center;
   margin-bottom: 1rem;
   font-weight: bold;
 }
+.about-titles {
+  font-size: 1.5rem;
+  color: rgb(2, 2, 78);
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
 
 .about-card {
   max-width: 800px;
@@ -262,4 +268,113 @@ text-align: center;
 .footer{
   background-color: #dee1e2;
   text-align: center;
+}/* HomeResponsive.css */
+
+/* Existing styles... */
+
+.feature-image,
+.student-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+/* Responsive image styles for screen widths ≤ 475px */
+@media (max-width: 475px) {
+  .feature-image,
+  .student-image {
+    width: 90% !important;
+    max-width: 200px;
+  }
+
+  video {
+    width: 90% !important;
+    height: auto;
+  }
+
+  h1, h2, h3 {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .about-description {
+    padding: 0 10px;
+    font-size: 0.9rem;
+  }
+
+  .image-button,
+  .action-button {
+    font-size: 0.9rem;
+  
+  }
+}
+.about-section {
+  text-align: center;
+}
+
+.about-titles {
+  font-size: 2rem;
+  color: rgb(2, 2, 78);
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.student-image {
+  width: 350px;
+  margin: 0 auto;
+  display: block;
+}
+
+.action-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.student-login {
+  background-color: rgb(4, 122, 231);
+  color: white;
+}
+
+.agency-login {
+  background-color: #0161c1;
+  color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 15px;
+  }
+
+  .student-image {
+    width: 250px; /* Make image smaller on mobile */
+  }
+
+  .action-button {
+    font-size: 14px; /* Adjust button text size */
+    padding: 8px 16px;
+  }
+
+  .about-titles {
+    font-size: 1.5rem; /* Smaller font size for titles */
+  }
+}
+
+@media (max-width: 475px) {
+  .student-image {
+    width: 200px; /* Further adjust image size */
+  }
+
+  .action-button {
+    font-size: 12px;
+    padding: 8px 12px; /* Smaller button */
+  }
+
+  .about-titles {
+    font-size: 1.2rem;
+  }
 }
