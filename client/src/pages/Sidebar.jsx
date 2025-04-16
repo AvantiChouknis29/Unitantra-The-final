@@ -19,9 +19,7 @@ export const Sidebar = () => {
         <li><NavLink to="/queries" className="service">Need Help?</NavLink></li>
 
         {/* Render Admin link only if user.isAdmin is true */}
-        {user?.isAdmin && (
-          <li><NavLink to="/admin/home" className="service">Admin</NavLink></li>
-        )}
+       
       </ul>
     </div>
   );

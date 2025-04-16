@@ -1,12 +1,12 @@
-/* General Layout */
-.main-content-container {
-  padding-left: 38px;
-  padding-right: 38px;
+/* === General Layout === */
+.main-container {
+  display: flex;
+  flex-direction: row;
 }
 
 .sidebar {
   width: 250px;
-  display: block; /* Ensures the sidebar is always visible */
+  flex-shrink: 0;
 }
 
 .container {
@@ -20,15 +20,14 @@
   padding: 20px;
 }
 
-/* Header */
+/* === Header === */
 h1 {
   font-size: 28px;
   color: #333;
   margin-bottom: 20px;
-  text-align: center;
 }
 
-/* Form Styles */
+/* === Form Styles === */
 .form {
   display: flex;
   flex-wrap: wrap;
@@ -59,7 +58,7 @@ h1 {
   background-color: #14691f;
 }
 
-/* Cards */
+/* === Cards === */
 .cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -71,7 +70,6 @@ h1 {
   padding: 16px;
   border-radius: 8px;
   transition: 0.3s;
-  background-color: #fff;
 }
 
 .card:hover {
@@ -102,7 +100,7 @@ h1 {
   background-color: #166a21;
 }
 
-/* Pagination */
+/* === Pagination === */
 .pagination {
   display: flex;
   justify-content: center;
@@ -113,102 +111,76 @@ h1 {
 }
 
 .page-btn {
-  padding: 6px 12px;
-  background-color: #eee;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.page-btn.active {
+  padding: 8px 12px;
   background-color: #2e78b9;
   color: white;
   border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
-.page-btn:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
+.page-btn.active,
+.page-btn:hover {
+  background-color: #005bb5;
 }
 
 .ellipsis {
-  padding: 6px 12px;
+  padding: 8px;
+  font-weight: bold;
   color: #999;
 }
 
-/* Error message */
+/* === Error === */
 .error {
   color: red;
   text-align: center;
-  margin-bottom: 16px;
+  margin-top: 15px;
+  font-weight: 500;
 }
 
-/* Responsive Tweaks */
-@media (max-width: 475px) {
+/* === Responsive Fixes === */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    display: none; /* Hide sidebar on small screens */
+  }
+
   .form {
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
   }
 
   .form input {
     width: 100%;
-    max-width: 320px;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  .content {
+    padding: 10px;
   }
 
   .btn-search {
     width: 100%;
-    max-width: 320px;
-  }
-
-  .card {
-    font-size: 14px;
-    padding: 12px;
   }
 
   .shortlist-btn {
     width: 100%;
-    text-align: center;
-    font-size: 13px;
-  }
-
-  .pagination {
-    gap: 4px;
-  }
-
-  h1 {
-    font-size: 22px;
   }
 }
-
-.main-container {
-  display: flex;
-  min-height: 100vh;
-}
-
-/* Sidebar always visible */
-.sidebar {
-  width: 250px;
-  display: block;
-}
-
-/* Main content */
-.container {
-  flex: 1;
-  padding: 20px;
-}
-
-/* Ensure sidebar remains visible on all screen sizes */
-@media (max-width: 475px) {
-  .main-container {
-    display: flex; /* Retain flex layout */
-  }
-
-  .sidebar {
-    display: none; /* Always show sidebar */
-  }
-
-  .container {
-    width: 100%;
-    padding: 10px;
-  }
+.main-content-container{
+  padding:80px;
 }

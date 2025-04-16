@@ -2,9 +2,6 @@
   display: flex;
 }
 
-.sidebar {
-  width: 250px; /* Adjust according to your sidebar width */
-}
 
 .dashboard-content {
   flex-grow: 1;
@@ -120,7 +117,9 @@
   .sidebar {
     display: none !important; /* Fully hide sidebar */
   }
-
+  .sidebar {
+    width: 250px;
+  }
   .dashboard-container {
     flex-direction: column; /* Stack elements */
   }

@@ -161,13 +161,13 @@ export const Search = () => {
     return link.length > maxLength ? `${link.substring(0, maxLength)}...` : link;
   };
   return (<><Navbar></Navbar>
-    <div className="main-container">
+    <div className="main-content-container">
      
-      <div className="container">
-        <div className="content">
-          <h1 style={{ textAlign: 'center', color: '#2e78b9' }}>Find a perfect course for you!</h1>
+      <div className="form-container">
+        <div className="form-content">
+          <h1 className="header-title" style={{ textAlign: 'center', color: '#2e78b9' }}>Find a perfect course for you!</h1>
           <br />
-          <form onSubmit={handleSubmit} className="form">
+          <form onSubmit={handleSubmit} className="search-form">
             <input type="text" placeholder="University" value={university} onChange={(e) => setUniversity(e.target.value)} />
             <input type="text" placeholder="Course" value={course} onChange={(e) => setCourse(e.target.value)} />
             <input type="text" placeholder="Level" value={level} onChange={(e) => setLevel(e.target.value)} />
@@ -186,7 +186,7 @@ export const Search = () => {
                   <p><strong>Level:</strong> {university.Level}</p>
                   <p><strong>Fees:</strong> {university.Fee}</p>
                   <p><strong>Course Duration:</strong> {university.Duration}</p>
-                  <p>🔗To learn more <a href={university.Link} target="_blank" rel="noopener noreferrer">{truncateLink(university.Link)}</a></p>
+                  <p >🔗To learn more <a href={university.Link} target="_blank" rel="noopener noreferrer">{truncateLink(university.Link)}</a></p>
                   <br></br> <button className='shortlist-btn' onClick={() => handleShortlist(university)}>Shortlist</button>
                 </div>
               ))}
