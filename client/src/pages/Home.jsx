@@ -169,7 +169,7 @@ export const Home = () => {
   <br>
   </br> <br>
   </br>
-  <a href="/agencylogin" className="action-button agency-login">Student Login</a>
+  <a href="/login" className="action-button agency-login">Student Login</a>
   <br>
   </br> <br>
   </br> <br>
