@@ -162,7 +162,7 @@ export const Search = () => {
   };
   return (<><Navbar></Navbar>
     <div className="main-container">
-      <Sidebar />
+     
       <div className="container">
         <div className="content">
           <h1 style={{ textAlign: 'center', color: '#2e78b9' }}>Find a perfect course for you!</h1>
