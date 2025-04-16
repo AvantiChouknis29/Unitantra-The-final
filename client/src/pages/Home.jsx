@@ -113,7 +113,7 @@ import about from './about.png'
 import home from './Home.png'
 import story from './Story.png'
 import img from './Studentagency.png'
-import student from './Students.jpg'
+import student from './ss.webp'
 import partner from './partner.avif'
 import background from './background.webp'
 export const Home = () => {
@@ -156,43 +156,32 @@ export const Home = () => {
   
  <div className='about-section'>
     <h2 className="about-title" style={{'color':'#0033A0'}}>Why Choose Unitantra?</h2>
- <br></br>  <h3 className="about-description">At Unitantra, we combine years of expertise with personalized solutions to help you achieve your global education dreams.<br></br> Whether it's finding the right university or securing scholarships, we are committed to opening doors to top international<br></br> institutions. From application submission to visa assistance and pre-departure guidance, we provide a comprehensive suite<br></br> of services to ensure your success. <br></br><br></br><br></br> Featuring our Simple Yet Comprehensive 5-Step Counselling Process.</h3>
- <br>
-  </br><br>
-  </br><img src={about} alt="about img" className="feature-image" />
-  <br>
-  </br><br>
-  </br>
+ <br></br>  <h3 className="about-description">At Unitantra, we combine years of expertise with personalized solutions to help you achieve your global education dreams. Whether it's finding the right university or securing scholarships, we are committed to opening doors to top international institutions. From application submission to visa assistance and pre-departure guidance, we provide a comprehensive suite of services to ensure your success. </h3>
    </div>
-   <br>
-   </br><br>
-   </br><br>
-   </br><br>
-   </br><br>
-   </br>
+   <br></br> <br></br> <br></br> <br></br>
+   <h2 className="about-title" style={{'color':'#0033A0'}}>Join us as a Student or Partner!</h2>
+
 <div className='about-section header-actions'>
-    <h2 className="about-titles" style={{'color':'#0033A0'}}>Join us as a Student or Partner!</h2>
- <br></br> <br>
- </br> <h3 className="about-description"></h3>
- <div className="image-container">
- <img src={student} alt="about img" className="student-image" />
- <br></br><br></br><br></br><br></br>
- <a href="/login" className="action-button student-login">Student Login</a>
- </div>         
- <br>
-  </br> <br>
-  </br> <br>
-  </br>
-  
-  <br>
-  </br>
+    
    <div className="image-container">
-  <img src={partner} alt="about img" className="student-image" />
- 
+  <img src={student} alt="about img" className="student-image" />
+
   <br>
   </br> <br>
   </br>
-  <a href="/agencylogin" className="action-button agency-login">Agency Login</a>
+  <a href="/agencylogin" className="action-button agency-login">Student Login</a>
+  <br>
+  </br> <br>
+  </br> <br>
+  </br>
+ </div>
+ <div className="image-container">
+  <img src={partner} alt="about img" className="student-image" />
+
+  <br>
+  </br> <br>
+  </br>
+  <a href="/login" className="action-button agency-login">Agency Login</a>
   <br>
   </br> <br>
   </br> <br>
@@ -200,13 +189,7 @@ export const Home = () => {
  </div>
    </div>
    </main>
-   <br>
-   </br>
-   <br>
-   </br><br>
-   </br><br>
-   </br><br>
-   </br>
+  
 
     <div className='footer'>
       <br></br><br></br>
