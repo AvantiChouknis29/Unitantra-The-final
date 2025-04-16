@@ -1,16 +1,12 @@
 /* General Layout */
-.main-content-container{
+.main-content-container {
   padding-left: 38px;
   padding-right: 38px;
 }
+
 .sidebar {
   width: 250px;
-}
-
-@media (max-width: 768px) {
-  .sidebar {
-    display: none;
-  }
+  display: block; /* Ensures the sidebar is always visible */
 }
 
 .container {
@@ -29,6 +25,7 @@ h1 {
   font-size: 28px;
   color: #333;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 /* Form Styles */
@@ -74,6 +71,7 @@ h1 {
   padding: 16px;
   border-radius: 8px;
   transition: 0.3s;
+  background-color: #fff;
 }
 
 .card:hover {
@@ -115,90 +113,102 @@ h1 {
 }
 
 .page-btn {
-  padding: 8px 12px;
+  padding: 6px 12px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.page-btn.active {
   background-color: #2e78b9;
   color: white;
   border: none;
-  border-radius: 4px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.2s;
 }
 
-.page-btn.active,
-.page-btn:hover {
-  background-color: #005bb5;
+.page-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .ellipsis {
-  padding: 8px;
-  font-weight: bold;
+  padding: 6px 12px;
   color: #999;
 }
 
-/* Error */
+/* Error message */
 .error {
   color: red;
   text-align: center;
-  margin-top: 15px;
-  font-weight: 500;
+  margin-bottom: 16px;
 }
 
-/* Responsive Fixes */
-@media (max-width: 768px) {
+/* Responsive Tweaks */
+@media (max-width: 475px) {
   .form {
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
   }
 
-  .form input,
+  .form input {
+    width: 100%;
+    max-width: 320px;
+  }
+
   .btn-search {
     width: 100%;
+    max-width: 320px;
+  }
+
+  .card {
+    font-size: 14px;
+    padding: 12px;
   }
 
   .shortlist-btn {
     width: 100%;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .pagination {
+    gap: 4px;
+  }
+
+  h1 {
+    font-size: 22px;
   }
 }
-input[type="text"],
-select {
-  padding: 8px;
-  font-size: 16px;
-  width: 100%;
-  max-width: 400px; /* Optional: limit max size on larger screens */
-  margin-bottom: 10px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
+
+.main-container {
+  display: flex;
+  min-height: 100vh;
 }
 
-@media (max-width: 768px) {
-  input[type="text"],
-  select {
-    padding: 6px;
-    font-size: 14px;
-    max-width: 100%; /* Fit within mobile screen */
+/* Sidebar always visible */
+.sidebar {
+  width: 250px;
+  display: block;
+}
+
+/* Main content */
+.container {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Ensure sidebar remains visible on all screen sizes */
+@media (max-width: 475px) {
+  .main-container {
+    display: flex; /* Retain flex layout */
   }
-}
-.shortlist-button{
-  margin-top: 10px;
-  background-color: #2ab63b;
-  color: white;
-  border: none;
-  padding: 8px 14px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 14px;
 
-}
-.shortlist-buttons{
-  margin-top: 10px;
-  background-color: #dce3dd;
-  color: white;
-  border: none;
-  padding: 8px 14px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 14px;
-  text-decoration: none;
+  .sidebar {
+    display: none; /* Always show sidebar */
+  }
 
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
 }
