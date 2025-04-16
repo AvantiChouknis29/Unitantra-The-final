@@ -1,129 +1,110 @@
-/* Main Registration Section */
 .section-registration {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  padding: 40px 60px;
+  gap: 60px; /* tighter spacing */
+  background-color: #f5f8fc;
+  min-height: 100vh;
   flex-wrap: wrap;
-  /* Adjust space below navbar */
 }
 
-/* Registration Image */
-.registration-image {
-  flex: 1;
-  max-width: 100%;
-  padding-left: 200px;
-}
-
-.registration-image img {
+/* Form */
+.registration-form {
   max-width: 400px;
-  height: 370px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: #fff;
  
 }
 
-/* Registration Form */
-.registration-form {
-  flex: 2;
-  max-width: 70%;
-  padding: 20px;
-}
-
 .registration-form h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  
-  color: #3377b6;
+  text-align: center;
+  font-size: 26px;
+  color: #2c5a91;
+  margin-bottom: 24px;
 }
 
-.registration-form form {
-  width: 50%;
-}
-
-/* Form Input Styling */
+/* Inputs and Labels */
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .form-group label {
+  font-weight: 600;
   display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
+  margin-bottom: 6px;
+  color: #002244;
 }
 
 .form-group input {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
+  font-size: 15px;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
+  border-radius: 6px;
 }
 
-/* Submit Button Styling */
+/* Button */
 button[type="submit"] {
+  margin-top: 15px;
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
+  color: white;
   font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 button[type="submit"]:hover {
   background-color: #0056b3;
 }
 
-/* Label and heading styling */
-label, h4 {
-  color: #0e426f;
-  font-size: 20px;
-}
-
 h5 {
-  font-size: 16px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+  color: #333;
 }
 
-/* Mobile Responsive (max-width: 400px) */
-@media (max-width: 475px) {
-  /* Adjust Navbar */
-  .navbar {
-    position: relative; /* If fixed navbar, set to fixed or stick top */
-    top: 0;
-    width: 100%;
-    z-index: 10;
+h5 a {
+  color: purple;
+  text-decoration: underline;
+}
+
+/* Image */
+.registration-image img {
+  max-width: 380px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+ 
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section-registration {
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
   }
 
-  /* Image Adjustments */
-  .registration-image {
-    display: none !important;
-    padding-left: 0;
-    display: flex;
-    justify-content: center;
-    width: 100%; /* Image container full width */
+  .registration-image,
+  .registration-form {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .registration-form {
+    box-shadow: none;
+    padding: 20px;
   }
 
   .registration-image img {
-    width: 100px; /* Make image smaller */
-    height: auto;
-  }
-
-  /* Form adjustments */
-  .registration-form form {
-    width: 100%; /* Form full width */
-  }
-
-  .registration-form h2 {
-    font-size: 22px;
-    margin-top: 30px;
-  }
-
-  /* Optional: Adjust font sizes for mobile */
-  label, h4 {
-    font-size: 16px;
-  }
-
-  h5 {
-    font-size: 14px;
+    max-width: 70%;
   }
 }

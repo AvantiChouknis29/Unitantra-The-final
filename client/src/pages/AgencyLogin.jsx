@@ -69,11 +69,11 @@ import { toast } from 'react-toastify';
                 <div className="section-registration">
                     
                     <div className="registration-image">
-                    <br></br>  <br></br>  <br></br>
+                    
                         <img src={registrationImage} alt="Registration" style={{ width: "600px" }} />
                     </div>
                     <div className="registration-form">
-                    <br></br>  <br></br>  <br></br>  <br></br>  <br></br>
+                    
                         <h2>Login as a Agent</h2>
                         <form onSubmit={handleSubmit}>
                            
