@@ -118,3 +118,8 @@ input[type="password"] {
     grid-gap: 15px;
   }
 }
+@media (max-width: 475px) {
+  .Agency-Dashboard-img {
+    display: none;
+  }
+}
