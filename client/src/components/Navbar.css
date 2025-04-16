@@ -1,82 +1,75 @@
-/* Navbar container */
+/* Main container */
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;  /* Reduce padding to prevent overflow */
-    width: 100%;  /* Ensure container does not overflow */
+    padding: 10px 20px;
+    flex-wrap: wrap;
     box-sizing: border-box;
-    max-width: 100%;
-    overflow: hidden;  /* Prevent overflow */
-}
-
-/* Logo link */
-.logo-brand a {
+    width: 100%;
+  }
+  
+  /* Logo */
+  .logo-brand a {
     text-decoration: none;
-    font-size: 2rem; /* Slightly smaller font size */
-    color: #f7725a; /* Logo color */
-}
-
-/* Navigation menu */
-nav ul {
+    font-size: 1.8rem; /* Slightly smaller logo font */
+    color: #2e78b7;
+  }
+  
+  /* Navigation */
+  nav {
+    width: 100%;
+  }
+  
+  nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
-    flex-wrap: wrap;  /* Allow items to wrap to next line if necessary */
-}
-
-nav ul li {
-    margin-right: 15px;  /* Reduce margin to prevent overflowing */
-    margin-bottom: 5px;  /* Added for spacing when wrapping */
-}
-
-/* NavLink styles */
-nav ul li a {
-    font-size: 1.6rem;  /* Adjust font size to fit better */
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  
+  nav ul li {
+    margin: 10px;
+  }
+  
+  nav ul li a {
+    font-size: 1.3rem; /* Smaller font for desktop */
     text-decoration: none;
-    color: #2e78b7; /* NavLink color */
+    color: #2e78b7;
     transition: color 0.3s ease;
-}
-
-/* Hover effect */
-nav ul li a:hover {
-    color: #f7725a; /* NavLink color on hover */
-}
-
-/* Mobile responsiveness for 475px width */
-@media (max-width: 475px) {
-    /* Container settings */
+  }
+  
+  nav ul li a:hover {
+    color: #f7725a;
+  }
+  
+  /* MOBILE view */
+  @media (max-width: 475px) {
     .container {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px 15px;  /* Add padding for small screens */
+      flex-direction: column;
+      align-items: flex-start;
     }
-
-    /* Logo size adjustment */
-    .logo-brand a {
-        font-size: 1.6rem; /* Smaller font size for mobile */
-    }
-
-    /* Navigation menu - Stack the items vertically */
+  
     nav ul {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 10px 0;
-        text-align: center;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      padding-left: 0;
     }
-
-    /* Navigation items settings */
+  
     nav ul li {
-        width: 100%;
-        margin-bottom: 10px;
+      margin: 8px 0;
+      width: 100%;
     }
-
-    /* NavLink adjustments for smaller screens */
+  
     nav ul li a {
-        font-size: 1.4rem; /* Smaller font size */
-        display: block;
-        width: 90%;
+      font-size: 1.1rem; /* Smaller font for mobile */
+      width: 100%;
+      display: block;
+      padding: 10px 5px;
+      border-bottom: 1px solid #eee;
     }
-}
+  }
+  

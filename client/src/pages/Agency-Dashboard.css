@@ -3,104 +3,101 @@
     width: 100%;
     max-width: 1570px;
     padding-left: 70px;
-    height: calc(100% - 300px);
-}
-
-.Agency-Dashboard-img {
+    padding-right: 20px;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .Agency-Dashboard-img {
+    flex: 1 1 50%;
+    min-width: 280px;
+  }
+  
+  .Agency-Dashboard-img img {
     width: 100%;
-    height: 100%;
-}
-
-.Agency-Dashboard-img img {
-    width: 100%;
-    height: 80%;
+    height: auto;
     object-fit: cover;
-}
-
-.Agency-Dashboard-text {
-    position: absolute;
-    top: 55%; /* Pushes it below navbar */
-    left: 10%;
-    transform: translateY(-50%);
+  }
+  
+  .Agency-Dashboard-text {
+    flex: 1 1 45%;
     color: #1C3A5D;
     font-size: 20px;
     line-height: 1.6;
     font-weight: 600;
     max-width: 600px;
-    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8); /* Subtle text shadow for readability */
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
     text-align: left;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    z-index: 10;}
-
-.dashboard-btn {
+    z-index: 10;
+  }
+  
+  .dashboard-btn {
     background-color: #1C3A5D;
     color: white;
     padding: 10px 20px;
-    margin-right: 15px;
+    margin: 10px 10px 0 0;
     font-size: 16px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-.dashboard-btn:hover {
+  }
+  
+  .dashboard-btn:hover {
     background-color: #31577C;
-}
-
-.dashboard-btn:focus {
+  }
+  
+  .dashboard-btn:focus {
     outline: none;
     box-shadow: 0 0 0 2px #1C3A5D;
-}
-
-/* === MEDIA QUERY FOR SMALL SCREENS (≤ 475px) === */
-@media (max-width: 475px) {
+  }
+  
+  /* === MEDIA QUERY FOR TABLETS AND BELOW (≤ 768px) === */
+  @media (max-width: 768px) {
     .Agency-Dashboard-container {
-        
-        padding-right: 15px;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
     }
-
-    .Agency-Dashboard-img img {
-        height: auto;
-        object-fit: contain;
-    }
-
+  
     .Agency-Dashboard-text {
-        position: static;
-        transform: none;
-        top: auto;
-        left: auto;
-        padding: 15px 10px;
-        text-align: center;
-        font-size: 16px;
-        text-shadow: none;
+      font-size: 18px;
+      text-align: center;
+      text-shadow: none;
     }
-
-    .Agency-Dashboard-text h1 {
-        font-size: 22px;
-    margin-bottom: 10px;
-    font-weight: 600;
-    }
-
+  
     .dashboard-btn {
-        width: 90%;
-        font-size: 15px;
-        padding: 10px;
-        margin-bottom: 10px;
+      width: 100%;
+      font-size: 15px;
+      padding: 10px;
+      margin-bottom: 10px;
     }
-    .Agency-Dashboard-text p {
-        margin: 5px 0;
-        font-size: 16px;
-        font-weight: 500;
-    }
-
+  
     .Agency-Dashboard-buttons {
-        margin-top: 15px;
-    display: flex;
-    gap: 10px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
     }
-}
+  }
+  
+  /* === MEDIA QUERY FOR MOBILE (≤ 475px) === */
+  @media (max-width: 475px) {
+    .Agency-Dashboard-text h1 {
+      font-size: 10px;
+      margin-bottom: 10px;
+    }
+  
+    .Agency-Dashboard-text p {
+      margin: 5px 0;
+      font-size: 10px;
+      font-weight: 300;
+    }
+  }
+  
