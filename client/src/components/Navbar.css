@@ -35,7 +35,7 @@
   }
   
   nav ul li a {
-    font-size: 1.3rem; /* Smaller font for desktop */
+    font-size: 1.8rem; /* Smaller font for desktop */
     text-decoration: none;
     color: #2e78b7;
     transition: color 0.3s ease;
