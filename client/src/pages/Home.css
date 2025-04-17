@@ -198,6 +198,6 @@ h1, h2, h3 {
 }
 .feature-image, .student-image {
   width: 100%;
-  max-width: 100%;
+ 
   object-fit: cover;
 }
