@@ -116,6 +116,7 @@ import img from './Studentagency.png'
 import student from './ss.webp'
 import partner from './partner.avif'
 import background from './background.webp'
+import 'animate.css';
 export const Home = () => {
   return (
     <div className="unitantra-home">
@@ -139,10 +140,10 @@ export const Home = () => {
 
   <div className="">
     <br></br>
-   <h1 style={{'color':'#0033A0'}}>Unleash Your Potential By Exploring Variety of Programs Worldwide With Unitantra!</h1>
+   <h1 className='animate__animated animate__slideInDown' style={{'color':'#0033A0'}}>Unleash Your Potential By Exploring Variety of Programs Worldwide With Unitantra!</h1>
    <br></br>
  
-   <h2 style={{'color':'#205781'}}>5+ countries • 2K+ universities • 89K+ courses • Relevant Services and more </h2>
+   <h2 className='animate__animated animate__slideInDown' style={{'color':'#205781'}}>5+ countries • 2K+ universities • 89K+ courses • Relevant Services and more </h2>
    <img src={background} alt="about img" className="feature-image" style={{width:'900px'}} />
   <br></br>
     <a href="/search">
@@ -155,8 +156,8 @@ export const Home = () => {
 
   
  <div className='about-section'>
-    <h2 className="about-title" style={{'color':'#0033A0'}}>Why Choose Unitantra?</h2>
- <br></br>  <h3 className="about-description">At Unitantra, we combine years of expertise with personalized solutions to help you achieve your global education dreams. Whether it's finding the right university or securing scholarships, we are committed to opening doors to top international institutions. From application submission to visa assistance and pre-departure guidance, we provide a comprehensive suite of services to ensure your success. </h3>
+    <h2 className="about-title animate__animated animate__pulse" style={{'color':'#0033A0'}}>Why Choose Unitantra?</h2>
+ <br></br>  <h3 className="about-description about-title animate__animated animate__pulse">At Unitantra, we combine years of expertise with personalized solutions to help you achieve your global education dreams. Whether it's finding the right university or securing scholarships, we are committed to opening doors to top international institutions. From application submission to visa assistance and pre-departure guidance, we provide a comprehensive suite of services to ensure your success. </h3>
    </div>
    <br></br> <br></br> <br></br> <br></br>
    <h2 className="about-title" style={{'color':'#0033A0'}}>Join us as a Student or Partner!</h2>
