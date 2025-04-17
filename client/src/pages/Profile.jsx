@@ -75,7 +75,7 @@ export const Profile = () => {
       <br />
       <h2 className="Profile-h2"></h2>
       
-      <img src={profileImg} alt="Registration" style={{ width: "290px", paddingLeft: "150px" }} />
+      <img src={profileImg} alt="Registration" style={{ width: "290px" }} />
       <form onSubmit={handleSubmit} className="profile-form">
         <div className="form-group">
           <br></br><br></br>
