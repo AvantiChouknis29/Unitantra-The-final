@@ -136,7 +136,7 @@ export const Home = () => {
 
       <main className="hero">
       <div className="image-container">
-<br></br><br></br><br></br><br></br>
+
   <div className="">
     <br></br>
    <h1 style={{'color':'#0033A0'}}>Unleash Your Potential By Exploring Variety of Programs Worldwide With Unitantra!</h1>
@@ -151,7 +151,7 @@ export const Home = () => {
      </div>
   
 </div>
-<br></br><br></br><br></br><br></br><br></br><br></br>
+<br></br><br></br><br></br>
 
   
  <div className='about-section'>
