@@ -95,7 +95,7 @@ h1, h2, h3 {
 .student-image {
   width: 100%;
   max-width: 100%;
-  height: 270px;
+  height: 350px;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   object-fit: cover;
@@ -197,7 +197,7 @@ h1, h2, h3 {
 
 }
 .feature-image, .student-image {
-  /* width: 100%; */
-  /* max-width: 60%; */
+  width: 100%;
+  max-width: 100%;
   object-fit: cover;
 }
