@@ -50,7 +50,6 @@ const AuxiliaryRequests = () => {
             <div className="aux-requests-button-group">
                 <button className="aux-requests-button" onClick={handleFlightTicketClick}>Flight Ticket</button>
                 <button className="aux-requests-button" onClick={handleAccommodationClick}>Accommodation</button>
-                <button className="aux-requests-button" onClick={handleIeltsClick}>IELTS/PTE</button>
                 <button className="aux-requests-button" onClick={handleCounselingClick}>Counseling</button>
                 <button className="aux-requests-button" onClick={handleQueriesClick}>Queries</button>
             </div>
