@@ -83,8 +83,8 @@ export const AgencyProfile = () => {
           <label htmlFor="phone">Phone</label>
           <input type="number" name="phone" id="phone" autoComplete='off' value={profile.phone} onChange={handleInput} required />
         </div>
-        <button type="submit">Add more information</button>
-      </form>
+        <button type="submit"><a href="https://docs.google.com/forms/d/1kASfS_901PKRfryIRiePm-pepLX5smV1mmDgnJ0YkhU/edit" target="_blank">Add more information</a></button>
+        </form>
     </div>  </>
   );
 };
