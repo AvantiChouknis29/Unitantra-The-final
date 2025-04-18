@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './AuxiliaryRequests.css'; // Import the CSS file
 import FlightTicket from './FlightTicketFetch';
 import Accomodation from './AccomodationFetch';
+import IELTS from './IELTSRequestsFetch';
 import CounsellingRequestsFetch from './CounsellingRequestsFetch'; // Import for Counselling
 import QueriesFetch from './QueriesFetch'; // Import for Queries
 
@@ -34,6 +35,8 @@ const AuxiliaryRequests = () => {
                 return <FlightTicket />;
             case 'accommodation':
                 return <Accomodation />;
+            case 'ielts':
+                return <IELTS />;
             case 'counseling':
                 return <CounsellingRequestsFetch />;
             case 'queries':
@@ -50,6 +53,7 @@ const AuxiliaryRequests = () => {
             <div className="aux-requests-button-group">
                 <button className="aux-requests-button" onClick={handleFlightTicketClick}>Flight Ticket</button>
                 <button className="aux-requests-button" onClick={handleAccommodationClick}>Accommodation</button>
+                <button className="aux-requests-button" onClick={handleIeltsClick}>IELTS/PTE</button>
                 <button className="aux-requests-button" onClick={handleCounselingClick}>Counseling</button>
                 <button className="aux-requests-button" onClick={handleQueriesClick}>Queries</button>
             </div>
