@@ -17,6 +17,7 @@ const QueriesDetails = () => {
                                  <strong>Username:</strong> {query.username}<br />
                                 <strong>Phone:</strong> {query.phone}<br />
                                 <strong>Email:</strong> {query.email}
+                                <strong>Query:</strong> {query.query}
                             </p>
                         </li>
                     ))}

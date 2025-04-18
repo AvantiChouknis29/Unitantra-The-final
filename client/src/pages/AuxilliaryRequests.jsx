@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './AuxiliaryRequests.css'; // Import the CSS file
 import FlightTicket from './FlightTicketFetch';
 import Accomodation from './AccomodationFetch';
-import IELTS from './IELTSRequestsFetch';
 import CounsellingRequestsFetch from './CounsellingRequestsFetch'; // Import for Counselling
 import QueriesFetch from './QueriesFetch'; // Import for Queries
 
@@ -35,8 +34,6 @@ const AuxiliaryRequests = () => {
                 return <FlightTicket />;
             case 'accommodation':
                 return <Accomodation />;
-            case 'ielts':
-                return <IELTS />;
             case 'counseling':
                 return <CounsellingRequestsFetch />;
             case 'queries':
