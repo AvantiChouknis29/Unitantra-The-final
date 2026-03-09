@@ -1,5 +1,5 @@
 🛠️ Project: Unitantra
-Unitantra is a comprehensive multi-panel web application developed to streamline and simplify the study abroad process for students and education agencies. Built using the MERN Stack (MongoDB, Express.js, React.js, Node.js), the system features robust functionality and a user-friendly interface.
+It is a comprehensive multi-panel web application developed to streamline and simplify the study abroad process for students and education agencies. Built using the MERN Stack (MongoDB, Express.js, React.js, Node.js), the system features robust functionality and a user-friendly interface.
 
 🔍 Key Features:
 🎓 Student Panel:
